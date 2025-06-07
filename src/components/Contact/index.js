@@ -177,8 +177,12 @@ justify-content: center;
 position: relative;
 z-index: 1;
 align-items: center;
+padding: 20px;
 @media (max-width: 960px) {
-    padding: 0px;
+    padding: 10px;
+}
+@media (max-width: 480px) {
+    padding: 5px;
 }
 `
 
@@ -232,6 +236,17 @@ const ContactCard = styled.div`
   margin-top: 28px;
   gap: 12px;
   text-align: center;
+  
+  @media (max-width: 768px) {
+    padding: 24px;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 480px) {
+    padding: 20px;
+    margin-top: 16px;
+    width: 90%;
+  }
 `
 
 const ContactTitle = styled.div`
@@ -239,6 +254,14 @@ const ContactTitle = styled.div`
   margin-bottom: 6px;
   font-weight: 600;
   color: ${({ theme }) => theme.text_primary};
+  
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 18px;
+  }
 `
 
 const EmailLink = styled.a`
@@ -259,9 +282,21 @@ const EmailLink = styled.a`
   cursor: pointer;
   display: inline-block;
   transition: transform 0.2s ease;
+  word-break: break-all;
   
   &:hover {
     transform: translateY(-2px);
+  }
+  
+  @media (max-width: 768px) {
+    font-size: 16px;
+    padding: 12px 14px;
+    word-break: break-word;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 14px;
+    padding: 10px 12px;
   }
 `
 
