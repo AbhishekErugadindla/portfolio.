@@ -154,7 +154,7 @@ export const education = [
     id: 0,
     img:cbit,
     school: "Chaitanya Bharathi Institute Of Technology,Hyderabad",
-    date: "Oct 2021 - Sep 2025",
+    date: "Oct 2021 - May 2025",
     grade: "9.45 CGPA",
     desc: "I hold a Bachelor's degree in Information Technology from Chaitanya Bharathi Institute of Technology (CBIT), Hyderabad, where I graduated in 2025 with a strong academic record and hands-on experience in software development, backend systems, and full-stack projects.",
     degree: "Bachelor in Engineering - BE,Information Technology",
